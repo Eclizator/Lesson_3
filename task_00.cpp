@@ -15,17 +15,17 @@ int print_chars_and_return_sum (int a, int b, int c){
     int i = 0;
     int j = 0;
 
- while (i <= c){
+ while (i <= c - 1){
      j = 0;
      
-     while( j <= c){
+     while( j <= c - 1){
         
-        if(  (i==j) || ( i+j ) == c){
+        if(  (i==j) || ( i+j ) == c-1){
 
             write(1,&outer,1);
         }
         
-        else if (  j == 0 || i == c  ||  j == c || i == 0 ){
+        else if (  j == 0 || i == c - 1 ||  j == c - 1 || i == 0 ){
             write(1,&inner,1);
         }
         else {
@@ -38,7 +38,23 @@ int print_chars_and_return_sum (int a, int b, int c){
      write(1,"\n",1);
      i++;
  }
- return c*2;
+ return 0;
  }
+
+
+int main() {
+
+	std::cout << print_chars_and_return_sum(30, 97, 10) << std::endl;
+	std::cout << print_chars_and_return_sum(97, 30, 10) << std::endl;
+	std::cout << print_chars_and_return_sum(130, 97, 10) << std::endl;
+	std::cout << print_chars_and_return_sum(97, 130, 10) << std::endl;
+    std::cout << print_chars_and_return_sum(97, 98, 50) << std::endl;
+
+    std::cout << print_chars_and_return_sum(97, 98, 2) << std::endl;
+    std::cout << print_chars_and_return_sum(97, 98, 5) << std::endl;
+    std::cout << print_chars_and_return_sum(97, 98, 8) << std::endl;
+    std::cout << print_chars_and_return_sum(35, 42, 8) << std::endl;
+    std::cout << print_chars_and_return_sum(95, 95, 8) << std::endl;
+}
 
 
