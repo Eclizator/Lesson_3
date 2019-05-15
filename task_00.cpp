@@ -34,11 +34,18 @@ int print_chars_and_return_sum (int a, int b, int c){
         }
         
         j++;
+        
      }
      write(1,"\n",1);
      i++;
+     
  }
- return 0;
+ if (c % 2){
+    return (i * 2) - 1;
+ }
+ else{
+     return c * 2;
+ }
  }
 
 
