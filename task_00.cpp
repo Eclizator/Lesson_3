@@ -49,19 +49,5 @@ int print_chars_and_return_sum (int a, int b, int c){
  }
 
 
-int main() {
-
-	std::cout << print_chars_and_return_sum(30, 97, 10) << std::endl;
-	std::cout << print_chars_and_return_sum(97, 30, 10) << std::endl;
-	std::cout << print_chars_and_return_sum(130, 97, 10) << std::endl;
-	std::cout << print_chars_and_return_sum(97, 130, 10) << std::endl;
-    std::cout << print_chars_and_return_sum(97, 98, 50) << std::endl;
-
-    std::cout << print_chars_and_return_sum(97, 98, 2) << std::endl;
-    std::cout << print_chars_and_return_sum(97, 98, 5) << std::endl;
-    std::cout << print_chars_and_return_sum(97, 98, 8) << std::endl;
-    std::cout << print_chars_and_return_sum(35, 42, 8) << std::endl;
-    std::cout << print_chars_and_return_sum(95, 95, 8) << std::endl;
-}
 
 
