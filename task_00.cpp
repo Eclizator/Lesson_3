@@ -14,39 +14,31 @@ int print_chars_and_return_sum (int a, int b, int c){
     
     int i = 0;
     int j = 0;
-
- while (i <= c - 1){
-     j = 0;
-     
-     while( j <= c - 1){
-        
-        if(  (i==j) || ( i+j ) == c-1){
-
+    int pizda = 0;
+    
+while (i < c ){
+    j = 0;
+    while( j < c ){
+        if(  (i==j) || ( i+j ) == c - 1){
             write(1,&outer,1);
+            pizda++;
         }
-        
-        else if (  j == 0 || i == c - 1 ||  j == c - 1 || i == 0 ){
+        else if (  j == 0 || i == c - 1 ||  j == c-1  || i == 0 ){
             write(1,&inner,1);
         }
         else {
-            
             write(1,"_",1);
         }
-        
         j++;
         
+        
      }
-     write(1,"\n",1);
-     i++;
-     
+    write(1,"\n",1);
+    i++;
  }
- if (c % 2){
-    return (i * 2) - 1;
+ return pizda;
  }
- else{
-     return c * 2;
- }
- }
+
 
 
 
