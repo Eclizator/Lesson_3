@@ -15,7 +15,7 @@ int print_chars_and_return_sum(int a, int b, int c) {
 
     int i = 0;
     int j = 0;
-    int count = 0;
+    int pizda = 0;
 
     while (i < c) {
 
